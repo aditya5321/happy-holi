@@ -522,3 +522,8 @@ window.addEventListener("touchend", function (e) {
         }
     }
 });
+document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+}
